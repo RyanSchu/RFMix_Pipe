@@ -4,7 +4,7 @@ Local ancestry pipeline for running RFMix
 Contained in this repository is a handful of scripts to create the files necessary to run RFMix from VCF.
 
 `Clean_input_main.sh` is the main script while `Clean_input_intersect.R` and `Clean_input_make_classes.R` are helper scripts.
-All are designed to be run from the command line, an example of which can be found in the file labelled wrap `wrap`. This wrapper file can be modified with the users files to easily create the necessary inputs
+All are designed to be run from the command line, an example of which can be found in the file labelled `wrap`. This wrapper file can be modified with the users files to easily create the necessary inputs
 
 ```
 nano wrap ###modify with your files, see inputs below
@@ -39,14 +39,14 @@ You may need to install a Local copy of RFMIx.
 
 0. Phase data if not phased. See Phasing_example.md
 
-1.Run `Clean_input_main.sh`
+1. Run `Clean_input_main.sh`
 * Remove snps containing duplicate positions/IDs
 * Find the subset of snps that exist across all files and make pos file
 * Subset files
 * Merge vcfs and create haplotype files
 * Make class file for RFMix input
 
-2.Run RFMix (See Below)
+2. Run RFMix (See Below)
 
 The script should take a few minutes to execute depending on the number of snps/samples being processed. 
 After it has executed users can take the output and run RFMix as normal
