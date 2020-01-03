@@ -1,0 +1,8 @@
+#!/bin/bash
+
+./Clean_input_main.sh \
+--ref /home/rschubert1/data/Local_ancestry_project/1000G_references/raw_ref/raw_afa/chr22.recode_AFA_TWO_WAY_REFERENCE.vcf.gz \
+--map /home/rschubert1/data/Local_ancestry_project/maps/interpolated_from_hapmap/chr22.interpolated_genetic_map \
+--query /home/rschubert1/data/Local_ancestry_project/paper_run_ASW/ASW_chr22.vcf.gz \
+--pop /home/rschubert1/data/Local_ancestry_project/1000G_references/2_way_afa_pop_code.txt \
+--out ./testing
