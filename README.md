@@ -35,11 +35,16 @@ Make sure all inputs are in the same build and that their SNP ID formats are con
 
 ### Workflow
 
-1) Remove snps containing duplicate positions/IDs
-2) Find the subset of snps that exist across all files and make pos file
-3) Subset files
-4) Merge vcfs and create haplotype files
-5) Make class file for RFMix input
+0. Phase data if not phased. See Phasing_example.md
+
+1.Run `Clean_input_main.sh`
+* Remove snps containing duplicate positions/IDs
+* Find the subset of snps that exist across all files and make pos file
+* Subset files
+* Merge vcfs and create haplotype files
+* Make class file for RFMix input
+
+2.Run RFMix (See Below)
 
 The script should take a few minutes to execute depending on the number of snps/samples being processed. 
 After it has executed users can take the output and run RFMix as normal
