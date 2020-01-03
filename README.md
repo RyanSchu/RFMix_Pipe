@@ -35,6 +35,7 @@ All inputs should be separated by chromosome (barring `pop` which is the same ac
 Make sure all inputs are in the same build and that their SNP ID formats are concordant. 
 
 ### Workflow
+You may need to install a Local copy of RFMIx.
 
 0. Phase data if not phased. See Phasing_example.md
 
