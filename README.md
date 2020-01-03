@@ -46,5 +46,5 @@ After it has executed users can take the output and run RFMix as normal
 
 **Example: Running RFMix**
 ```
- python RunRFMix.py -e 2 -w 0.2 --num-threads <n> --forward-backward PopPhased " + <example_merged.haps> <example.classes> <example.pos> -o <output.results>
+ python RunRFMix.py -e 2 -w 0.2 --num-threads <n> --forward-backward PopPhased <example_merged.haps> <example.classes> <example.pos> -o <output.results>
 ```
