@@ -37,10 +37,10 @@ do
      esac
 done
 
-bcftools query -f '%ID %CHROM %POS\n' '${query}' -o ${outDir}_query.snps
-bcftools query -f '%ID %CHROM %POS\n' '${ref} -o ${outDir}_ref.snps
+bcftools query -f '%ID %CHROM %POS\n' ${query} -o ${outDir}_query.snps
+bcftools query -f '%ID %CHROM %POS\n' ${ref} -o ${outDir}_ref.snps
 
-Rscript Clean_input_intersect.R --query ${outDir}_query.snps --ref ${outDir}_ref.snps --map '${map}' --out ${outDir}
+Rscript Clean_input_intersect.R --query ${outDir}_query.snps --ref ${outDir}_ref.snps --map ${map} --out ${outDir}
 
 
 
