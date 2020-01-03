@@ -18,6 +18,7 @@ Example query data can be taken from the 1000 Genomes ASW population
 
 Map files were sourced from: https://github.com/joepickrell/1000-genomes-genetic-maps
 
+RFMix can be downloaded from https://sites.google.com/site/rfmixlocalancestryinference/
 ### Inputs
 
 There are five main inputs. 
