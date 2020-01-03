@@ -6,9 +6,16 @@ Contained in this repository is a handful of scripts to create the files necessa
 `Clean_input_main.sh` is the main script while `Clean_input_intersect.R` and `Clean_input_make_classes.R` are helper scripts.
 All are designed to be run from the command line, an example of which can be found in the file labelled wrap `wrap`. This wrapper file can be modified with the users files to easily create the necessary inputs
 
+```
+nano wrap ###modify with your files, see inputs below
+./wrap
+```
+
 ### Example Data
 Reference files were sourced from 1000 Genomes project YRI and CEU populations. 
+
 Example query data can be taken from the 1000 Genomes ASW population
+
 Map files were sourced from: https://github.com/joepickrell/1000-genomes-genetic-maps
 
 ### Inputs
