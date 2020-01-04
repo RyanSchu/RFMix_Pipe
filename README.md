@@ -49,9 +49,10 @@ You may need to install a Local copy of RFMIx.
 2. Run RFMix (See Below)
 
 The script should take a few minutes to execute depending on the number of snps/samples being processed. 
-After it has executed users can take the output and run RFMix as normal
+After it has executed users can take the output and run RFMix as normal. Be aware that RFMix needs to be run from the install directory containing RFMix
 
 **Example: Running RFMix**
 ```
+cd RFMix_v1.5.4 
  python RunRFMix.py -e 2 -w 0.2 --num-threads <n> --forward-backward PopPhased <example_merged.haps> <example.classes> <example.pos> -o <output.results>
 ```
