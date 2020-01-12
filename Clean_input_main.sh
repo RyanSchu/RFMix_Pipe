@@ -67,7 +67,7 @@ echo "Sorting"
 /usr/local/bin/tabix ${outDir}_query.intersect_sorted.vcf.gz
 echo "Merging"
 /usr/local/bin/bcftools merge ${outDir}_ref.intersect_sorted.vcf.gz ${outDir}_query.intersect_sorted.vcf.gz -o ${outDir}_merged.vcf.gz -O z
-/usr/local/bin/bcftools view ${outDir}_merged.vcf.gz -U -o ${outDir}_merged_exclude_uncalled.vcf.gz -O z
+/usr/local/bin/bcftools view ${outDir}_merged.vcf.gz -U -e 'GT[*] = "mis"' -o ${outDir}_merged_exclude_uncalled.vcf.gz -O z
 echo "making haplotype file"
 /usr/local/bin/bcftools convert --hapsample --vcf-ids ${outDir}_merged_exclude_uncalled.vcf.gz -o ${outDir}_merged.haps
 zcat  ${outDir}_merged.haps.hap.gz | awk '{ $1=""; $2=""; $3=""; $4=""; $5=""; print}' | sed 's/\s//g' | sed s/\\*//g > ${outDir}_merged.haps
